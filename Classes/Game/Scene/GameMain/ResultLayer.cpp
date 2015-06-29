@@ -61,14 +61,6 @@ void ResultLayer::selectScene(Vec2 pos){
 			auto fade = TransitionFade::create(1.5f, scene, Color3B::BLACK);
 			Director::getInstance()->replaceScene(fade);
 		}
-
-        if( clearStage <  selectStage )
-        {
-            if(clearStage > 4) return;
-            
-            userDef->setIntegerForKey("clearStage",selectStage);
-            userDef->flush();
-        }
     };
     
     auto titleCallback		= [ & ]( Ref* )

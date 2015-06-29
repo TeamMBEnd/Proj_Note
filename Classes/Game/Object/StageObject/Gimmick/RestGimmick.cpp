@@ -37,7 +37,7 @@ bool RestGimmick::init( const std::string& nodeName, const GimmickData& data ) {
 
 	initPhysics();
 
-	auto action = JumpBy::create(5,Vec2::ZERO,400,1);
+	auto action = JumpBy::create(5,Vec2::ZERO,700,1);
 
 	RepeatForever* reForever = RepeatForever::create(action);
 

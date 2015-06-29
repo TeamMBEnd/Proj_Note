@@ -108,6 +108,7 @@ void GameDataMediator::update(float dt, UiObjectLayer* uiLayer){
 			
 			userDef->setIntegerForKey("clearStage", selectStage);
 			userDef->setIntegerForKey("selectStage", selectStage + 1);
+            userDef->setIntegerForKey("selectGimmick", selectStage + 1);
 
 			mResult = ResultLayer::create(mBlockManager->getGoalPos());
             addChild(mResult,100);

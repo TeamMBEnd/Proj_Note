@@ -160,8 +160,7 @@ void TitleState::sceneChange(){
             
             UserDefault* useDef  = UserDefault::getInstance();
             useDef->setIntegerForKey("selectStage",1);
-			useDef->setIntegerForKey("selectGimmick", 1);
-			
+			useDef->setIntegerForKey("selectGimmick",1);
             useDef->flush();
             
             //ゲーム生成
